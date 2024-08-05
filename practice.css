@@ -1,0 +1,64 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color:purple;
+    height:1000px;
+    padding: 10px;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+.item1{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    font-size: 30px;
+    border: 1px solid black;
+     grid-column: 1/4; /* grid column start from col 1 and end before from col 4. */
+}
+.item2{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    font-size: 30px;
+    border: 1px solid black;
+    grid-column: 1/ span 3; /* grid column start from col 1 and end span 2 col . */
+}
+.item3{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    font-size: 30px;
+    border: 1px solid black;
+    grid-row: 3/5; /* grid row start from row 3 and end before from row 5 end */
+}
+
+
+.item4{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    font-size: 30px;
+    border: 1px solid black;
+    grid-row: 3/span 2;  /* grid row start from line 3 and span 2 rows. */
+}
+
+
+.item{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    font-size: 30px;
+    border: 1px solid black;
+}
